@@ -9,8 +9,8 @@ const MainLayout = () => {
       <header className="font-iranSans font-thin">
         <Navbar />
       </header>
-      <main className="relative font-iranSans">
-        <div className="pb-2 px-4 bg-slate-800 text-white backdrop-filter sticky top-0 font-extrabold text-sm">
+      <main className="relative font-iranSans bg-slate-800">
+        <div className="z-40 px-4 py-3 bg-slate-800/75 backdrop-blur-sm text-white sticky top-0 font-extrabold text-sm">
           <SubNavbar />
         </div>
         <Outlet />

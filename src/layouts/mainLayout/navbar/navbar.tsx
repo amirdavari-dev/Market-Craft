@@ -1,19 +1,26 @@
 import market from "@/assets/images/logo.png";
 import MegaMenu from "./megaMenu";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import ChangeTheme from "@/components/change-theme";
 import { FiSearch } from "react-icons/fi";
+import MegaLink from "./megaLink";
 const Navbar = () => {
   return (
-    <nav className=" text-slate-400 py-2 px-4 bg-slate-800">
+    <nav className=" text-slate-400 py-2 px-4 bg-slate-800 text-sm">
       <div className="grid grid-cols-12">
         <div className="col-span-5 flex justify-start items-center gap-x-1">
-          <MegaMenu />
+          <MegaMenu location="topnav" title="ورود">
+            <MegaLink>
+              <div className="p-3">
+                <Link to="/">دوره های VIP</Link>
+              </div>
+            </MegaLink>
+          </MegaMenu>
           <div className="relative w-full">
             <input
               type="search"
               id="search-dropdown"
-              className="block p-1 w-full z-20 ps-10 bg-inherit outline-none" 
+              className="block p-1 w-full z-20 ps-10 bg-inherit outline-none"
               placeholder="جست و جو"
               required
             />

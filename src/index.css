@@ -12,6 +12,35 @@
   .anm-g {
     @apply delay-75 duration-150 ease-in-out;
   }
+  /* progress audio */
+  progress.audioTime[value] {
+    --color: rgb(250 204 21); 
+    --background: lightgrey;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 10em;
+    background: var(--background);
+    direction: ltr;
+    @apply w-full h-[0.2rem]
+  }
+  progress.audioTime[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress.audioTime[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress.audioTime[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  /* mega style */
+  .megaParent div.top-full{
+    @apply right-0 
+  }
 }
 @layer base {
   @font-face {

@@ -12,52 +12,66 @@ const Footer = () => {
       <div className="bg-yellow-400 flex justify-center items-center gap-x-4 p-6">
         <div>
           <a href="#">
-            <FaTelegram size={30} />
+            <FaTelegram className="hover:scale-95 anm-g" size={25} />
           </a>
         </div>
         <div>
           <a href="#">
-            <GrYoutube size={30} />
+            <GrYoutube className="hover:scale-95 anm-g" size={25} />
           </a>
         </div>
         <div>
           <a href="#">
-            <FaLinkedin size={30} />
+            <FaLinkedin className="hover:scale-95 anm-g" size={25} />
           </a>
         </div>
         <div>
           <a href="#">
-            <FaFacebook size={30} />
+            <FaFacebook className="hover:scale-95 anm-g" size={25} />
           </a>
         </div>
         <div>
           <a href="#">
-            <FaInstagram size={30} />
+            <FaInstagram className="hover:scale-95 anm-g" size={25} />
           </a>
         </div>
       </div>
       <div>
-        <ul className="flex justify-center items-center gap-x-4 text-slate-400 px-3 py-5">
+        <ul className="flex justify-center items-center gap-x-4 text-slate-400 px-3 py-5 text-sm">
           <li>
-            <Link to="/">صفحه اصلی</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              صفحه اصلی
+            </Link>
           </li>
           <li>
-            <Link to="/">دوره ها</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              دوره ها
+            </Link>
           </li>
           <li>
-            <Link to="/">سمینارها</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              سمینارها
+            </Link>
           </li>
           <li>
-            <Link to="/">وبلاگ</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              وبلاگ
+            </Link>
           </li>
           <li>
-            <Link to="/">نتایج</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              نتایج
+            </Link>
           </li>
           <li>
-            <Link to="/">درباره ما</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              درباره ما
+            </Link>
           </li>
           <li>
-            <Link to="/">تماس باما</Link>
+            <Link className="hover:text-white anm-g" to="/">
+              تماس باما
+            </Link>
           </li>
         </ul>
       </div>
@@ -69,7 +83,9 @@ const Footer = () => {
           <img src={market} alt="MarketCraft" />
         </div>
         <div>
-          <p className="text-slate-400 text-sm">تمام حقوق این وبسایت متعلق به مارکت کرفت می باشد</p>
+          <p className="text-slate-400 text-sm">
+            تمام حقوق این وبسایت متعلق به مارکت کرفت می باشد
+          </p>
         </div>
       </div>
     </footer>
